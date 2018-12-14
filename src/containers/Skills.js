@@ -1,5 +1,5 @@
 import React ,{Component} from 'react'
-
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 class Skills extends Component{
     render(){
         return(
@@ -7,6 +7,11 @@ class Skills extends Component{
                 <span className="heading-meta title">My Specialty</span>
                 <h2 className="subheading title">My Skills</h2>
                 <div className="row">
+                    <ReactCSSTransitionGroup transitionName="slide1"
+                                             transitionAppear={true}
+                                             transitionAppearTimeout={1000}
+                                             transitionEnterTimeout={1000}
+                                             transitionLeaveTimeout={1000}>
                     <div className="col-md-12 " >
                         <p>The Big Oxmox advised her not to do so, because there were thousands of bad Commas,
                             wild Question.  Marks and devious Semikoli, but the Little Blind Text didn’t listen.
@@ -80,8 +85,9 @@ class Skills extends Component{
                             </div>
                         </div>
                     </div>
-
+                    </ReactCSSTransitionGroup>
                 </div>
+
             </div>
         )
     }

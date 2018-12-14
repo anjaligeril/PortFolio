@@ -11,12 +11,14 @@ import Experience from './Experience'
 import Work from './Work'
 import Contact from './Contact'
 import {Link} from 'react-router-dom'
-
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 class PortFolio extends Component{
     render(){
         return(
             <div className="wrapper" id="wrapper">
+
                 <div className="navigation col-lg-3 well ">
+
                     <div className="text-center head">
                         <img src={Img1} height="150" width="150" className="img-circle" alt="photo"/>
                         <h3 className="title">Anjali Elizabeth Joseph</h3>
@@ -35,7 +37,7 @@ class PortFolio extends Component{
                         </ul>
                     </div>
                 </div>
-                <div className="content col-lg-9">
+                <div className="content col-lg-8">
                     <Route path="/" exact component={Header}/>
                     <Route path="/about" exact component={About}/>
                     <Route path="/services" component={Services}/>
@@ -45,6 +47,7 @@ class PortFolio extends Component{
                     <Route path="/work" component={Work}/>
                     <Route path="/contact" component={Contact}/>
                 </div>
+
 
             </div>
 

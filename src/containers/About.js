@@ -1,9 +1,14 @@
 import React ,{Component} from 'react'
-
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 class About extends Component{
     render(){
         return(
             <div className="aboutme text-left">
+                <ReactCSSTransitionGroup transitionName="fade"
+                                         transitionAppear={true}
+                                         transitionAppearTimeout={800}
+                                         transitionEnterTimeout={800}
+                                         transitionLeaveTimeout={800}>
                 <span className="heading-meta title">About Us</span>
                 <h2 className="subheading title">Who Am I?</h2>
                 <p><strong>Hi I'm Anjali Elizabeth Joseph</strong> On her way she met a copy. The copy warned the Little Blind Text,
@@ -13,6 +18,8 @@ class About extends Component{
                 <p>Even the all-powerful Pointing has no control about the blind texts it is an almost
                     unorthographic life One day however a small line of blind text by the name of Lorem Ipsum
                     decided to leave for the far World of Grammar.</p>
+
+
                 <div className="row">
                     <div className="col-md-4 " >
                         <div className="services color-2">
@@ -41,6 +48,7 @@ class About extends Component{
                         </div>
                     </div>
                 </div>
+                </ReactCSSTransitionGroup>
             </div>
         )
     }

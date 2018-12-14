@@ -1,5 +1,5 @@
 import React ,{Component} from 'react'
-
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 class Experience extends Component{
     render(){
         return(
@@ -7,9 +7,14 @@ class Experience extends Component{
                 <span className="heading-meta title">Experience</span>
                 <h2 className="subheading title">Work Experience</h2>
                 <div className="row">
+                    <ReactCSSTransitionGroup transitionName="slide5"
+                                             transitionAppear={true}
+                                             transitionAppearTimeout={1000}
+                                             transitionEnterTimeout={1000}
+                                             transitionLeaveTimeout={1000}>
                     <div className="col-md-12">
                         <div className="timeline-centered">
-                            <article className="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+                            <article className="timeline-entry ">
                                 <div className="timeline-entry-inner">
 
                                     <div className="timeline-icon color-1">
@@ -25,7 +30,7 @@ class Experience extends Component{
                                     </div>
                                 </div>
                             </article>
-                            <article className="timeline-entry animate-box" data-animate-effect="fadeInRight">
+                            <article className="timeline-entry " >
                                 <div className="timeline-entry-inner">
                                     <div className="timeline-icon color-2">
                                         <i className="glyphicon glyphicon-briefcase"></i>
@@ -39,7 +44,7 @@ class Experience extends Component{
                                     </div>
                                 </div>
                             </article>
-                            <article className="timeline-entry begin animate-box" data-animate-effect="fadeInBottom">
+                            <article className="timeline-entry begin " >
                                 <div className="timeline-entry-inner">
                                     <div className="timeline-icon color-none">
                                     </div>
@@ -48,6 +53,7 @@ class Experience extends Component{
                         </div>
 
                         </div>
+                    </ReactCSSTransitionGroup>
                 </div>
             </div>
         )

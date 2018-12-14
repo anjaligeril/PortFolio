@@ -1,47 +1,54 @@
 import React ,{Component} from 'react'
-
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 class Contact extends Component{
     render(){
         return(
             <div className="contactSection text-left">
                 <span className="heading-meta title">Get in Touch</span>
                 <h2 className="subheading title">Contact</h2>
+
                 <div className="row">
+                    <ReactCSSTransitionGroup
+                        transitionName="slide"
+                        transitionAppear={true}
+                        transitionAppearTimeout={1000}
+                        transitionEnterTimeout={1000}
+                        transitionLeaveTimeout={1000}>
                     <div className="col-md-5">
-                        <div className="colorlib-feature colorlib-feature-sm "
-                            >
-                            <div className="icon">
-                                <i className="icon-globe-outline"></i>
+                        <div className="contact-feature contact-feature-sm "
+                             >
+                            <div className="contact-icon">
+                                <i className="glyphicon glyphicon-send"></i>
                             </div>
-                            <div className="text">
-                                <p><a href="#">info@domain.com</a></p>
-                            </div>
-                        </div>
-
-                        <div className="colorlib-feature colorlib-feature-sm animate-box"
-                             data-animate-effect="fadeInLeft">
-                            <div className="colorlib-icon">
-                                <i className="icon-map"></i>
-                            </div>
-                            <div className="colorlib-text">
-                                <p>198 West 21th Street, Suite 721 New York NY 10016</p>
+                            <div className="contact-text">
+                                <p><a href="#">anjali99malu@gmail.com</a></p>
                             </div>
                         </div>
 
-                        <div className="colorlib-feature colorlib-feature-sm animate-box"
-                             data-animate-effect="fadeInLeft">
-                            <div className="colorlib-icon">
-                                <i className="icon-phone"></i>
+                        <div className="contact-feature contact-feature-sm "
+                             >
+                            <div className="contact-icon">
+                                <i className="glyphicon glyphicon-home"></i>
                             </div>
-                            <div className="colorlib-text">
-                                <p><a href="tel://">+123 456 7890</a></p>
+                            <div className="contact-text">
+                                <p>56 Leander Street ,Brampton ,Ontario L6S3M7</p>
+                            </div>
+                        </div>
+
+                        <div className="contact-feature contact-feature-sm "
+                             >
+                            <div className="contact-icon">
+                                <i className="glyphicon glyphicon-phone"></i>
+                            </div>
+                            <div className="contact-text">
+                                <p><a href="tel://">+416 822 3193</a></p>
                             </div>
                         </div>
                     </div>
                     <div className="col-md-7 col-md-push-1">
                         <div className="row">
-                            <div className="col-md-10 col-md-offset-1 col-md-pull-1 animate-box"
-                                 data-animate-effect="fadeInRight">
+                            <div className="col-md-10 col-md-offset-1 col-md-pull-1 "
+                                 >
                                 <form action="">
                                     <div className="form-group">
                                         <input type="text" className="form-control" placeholder="Name"/>
@@ -65,8 +72,12 @@ class Contact extends Component{
 
                         </div>
                     </div>
+                    </ReactCSSTransitionGroup>
                 </div>
             </div>
+
+
+
         )
     }
 }

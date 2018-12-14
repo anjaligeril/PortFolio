@@ -1,5 +1,5 @@
 import React ,{Component} from 'react'
-
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 class Services extends Component{
     render(){
         return(
@@ -8,6 +8,11 @@ class Services extends Component{
                 <span className="heading-meta title">What I do?</span>
                 <h2 className="subheading title">Here are some of my expertise</h2>
                 <div className="row  row-pt-md">
+                    <ReactCSSTransitionGroup transitionName="slide2"
+                                             transitionAppear={true}
+                                             transitionAppearTimeout={1000}
+                                             transitionEnterTimeout={1000}
+                                             transitionLeaveTimeout={1000}>
                     <div className=" col-md-4 text-center">
                         <div className="box1 services color-1">
                             <span className="icon  "><i className="glyphicon glyphicon-flash"></i></span>
@@ -35,6 +40,12 @@ class Services extends Component{
                             </div>
                         </div>
                     </div>
+                    </ReactCSSTransitionGroup>
+                    <ReactCSSTransitionGroup transitionName="slide5"
+                                             transitionAppear={true}
+                                             transitionAppearTimeout={1000}
+                                             transitionEnterTimeout={1000}
+                                             transitionLeaveTimeout={1000}>
                     <div className="col-md-4 text-center ">
                         <div className=" box1 services color-4">
                             <span className="icon "><i className="glyphicon glyphicon glyphicon-globe"></i></span>
@@ -62,6 +73,7 @@ class Services extends Component{
                             </div>
                         </div>
                     </div>
+                    </ReactCSSTransitionGroup>
                 </div>
 
             </div>
