@@ -11,7 +11,7 @@ import Experience from './Experience'
 import Work from './Work'
 import Contact from './Contact'
 import {Link} from 'react-router-dom'
-import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+
 class PortFolio extends Component{
     render(){
         return(
@@ -25,6 +25,7 @@ class PortFolio extends Component{
                         <span ><a href="#">Software Developer</a> in Toronto</span>
                     </div>
                     <div className="nav ">
+
                         <ul>
                             <li className="active"><Link to={"/"}>Home</Link></li>
                             <li><Link to={"/about"}>About</Link></li>

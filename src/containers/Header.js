@@ -10,7 +10,7 @@ class Header extends Component{
         return(
             <div className="headerSection">
 
-                <img src={Logo} height="80" width="80"/>
+                <h1 className="title">Welcome To My Profile..</h1>
                 <ReactCSSTransitionGroup
                     transitionName="slide"
                     transitionAppear={true}
