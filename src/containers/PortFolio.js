@@ -37,6 +37,19 @@ class PortFolio extends Component{
                             <li><Link to={"/contact"}>Contact</Link></li>
                         </ul>
                     </div>
+                    <div className="colorlib-footer">
+                        <p><small>&copy; Copyright &copy;<script>document.write(new Date().getFullYear());</script>
+                            All rights reserved | This website is made with <i class="glyphicon glyphicon-heart" aria-hidden="true">
+                            </i>
+                             by Anjali
+                           </small></p>
+                    <ul>
+                        <li><a href="#"><i class="icon-facebook2"></i></a></li>
+                        <li><a href="#"><i class="icon-twitter2"></i></a></li>
+                        <li><a href="#"><i class="icon-instagram"></i></a></li>
+                        <li><a href="#"><i class="icon-linkedin2"></i></a></li>
+                    </ul>
+                </div>
                 </div>
                 <div className="content col-lg-8">
                     <Route path="/" exact component={Header}/>

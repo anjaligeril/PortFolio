@@ -23,7 +23,7 @@ li{
 .navigation{
     margin-left: 20px;
     position: fixed;
-    overflow-y: scroll ;
+    overflow-y: auto ;
     height: 600px;
     left:0;
     display: block;
