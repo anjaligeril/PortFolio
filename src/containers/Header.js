@@ -10,9 +10,9 @@ class Header extends Component{
         return(
             <div className="headerSection">
 
-                <h1 className="title">Welcome To My Profile..</h1>
+                <h1 className="title mainhead"><i>Welcome To My Profile..</i></h1>
                 <ReactCSSTransitionGroup
-                    transitionName="slide"
+                    transitionName="fade"
                     transitionAppear={true}
                     transitionAppearTimeout={1000}
                     transitionEnterTimeout={1000}
@@ -23,9 +23,12 @@ class Header extends Component{
 
 
                     <div className="head-content">
+                        <div className="col-lg-12 headData">
                         <h1>Hi! <br/>I'm Anjali</h1>
-                        <h4> Enthusiastic Web Developer | Passionate Coder |Mastery in React.js,Javascript,HTML5,CSS,BootStrap,Json,C,C++,C#,Asp.net,Python,Adobe Photoshop &Illustrator
+                        <h4 className="headDdata"> Enthusiastic Web Developer | Passionate Coder |Mastery in React.js,Javascript,HTML5,CSS,BootStrap,Json,C,C++,C#,Asp.net,Python,Adobe Photoshop &Illustrator
                         ..</h4>
+                        </div>
+                        <div className="headButton">
                         <div className="col-lg-4">
 
                             <p><a className="btn btn-info btn-learn" target="_blank" href={Cv}>Download CV <i
@@ -40,6 +43,7 @@ class Header extends Component{
 
                             <p><a className="btn btn-primary btn-learn"  target="_blank" href="https://github.com/anjaligeril">Go Through My Git <i
                                 className="icon-download4"></i></a></p>
+                        </div>
                         </div>
                     </div>
                 </ReactCSSTransitionGroup>

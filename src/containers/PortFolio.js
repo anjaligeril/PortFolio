@@ -15,41 +15,46 @@ import {Link} from 'react-router-dom'
 class PortFolio extends Component{
     render(){
         return(
-            <div className="wrapper" id="wrapper">
+            <div className="wrapper" >
 
-                <div className="navigation col-lg-3 well ">
+                <div className="navigation col-lg-3  ">
+                    <div className=" navi affix">
+                        <div className="well">
+                            <div className="text-center head ">
+                                <img src={Img1} height="150" width="150" className="img-circle" alt="photo"/>
+                                <h3 className="title">Anjali Elizabeth Joseph</h3>
+                                <span ><a href="#">Software Developer</a> in Toronto</span>
+                            </div>
+                            <div className="nav ">
 
-                    <div className="text-center head">
-                        <img src={Img1} height="150" width="150" className="img-circle" alt="photo"/>
-                        <h3 className="title">Anjali Elizabeth Joseph</h3>
-                        <span ><a href="#">Software Developer</a> in Toronto</span>
+                                <ul>
+                                    <li className="active"><Link to={"/"}>Home</Link></li>
+                                    <li><Link to={"/about"}>About</Link></li>
+                                    <li><Link to={"/services"}>Services</Link></li>
+                                    <li><Link to={"/skills"}>Skills</Link></li>
+                                    <li><Link to={"/education"}>Education</Link></li>
+                                    <li><Link to={"/experience"}>Experience</Link></li>
+                                    <li><Link to={"/work"}>Work</Link></li>
+                                    <li><Link to={"/contact"}>Contact</Link></li>
+                                </ul>
+                            </div>
+                            <div className="footer  ">
+                                <p><small>&copy; Copyright &copy;<script>document.write(new Date().getFullYear());</script>
+                                    All rights reserved ..<br/>This website is made
+                                    by Anjali..
+                                </small></p>
+                                <ul className="list">
+                                    <li><a href="#"><i className="fa fa-facebook-square"></i></a></li>
+                                    <li><a href="#"><i className="	fa fa-twitter-square"></i></a></li>
+                                    <li><a href="#"><i className="fa fa-instagram"></i></a></li>
+                                    <li><a href="#"><i className="fa fa-linkedin-square"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+
                     </div>
-                    <div className="nav ">
 
-                        <ul>
-                            <li className="active"><Link to={"/"}>Home</Link></li>
-                            <li><Link to={"/about"}>About</Link></li>
-                            <li><Link to={"/services"}>Services</Link></li>
-                            <li><Link to={"/skills"}>Skills</Link></li>
-                            <li><Link to={"/education"}>Education</Link></li>
-                            <li><Link to={"/experience"}>Experience</Link></li>
-                            <li><Link to={"/work"}>Work</Link></li>
-                            <li><Link to={"/contact"}>Contact</Link></li>
-                        </ul>
-                    </div>
-                    <div className="colorlib-footer">
-                        <p><small>&copy; Copyright &copy;<script>document.write(new Date().getFullYear());</script>
-                            All rights reserved | This website is made with <i class="glyphicon glyphicon-heart" aria-hidden="true">
-                            </i>
-                             by Anjali
-                           </small></p>
-                    <ul>
-                        <li><a href="#"><i class="icon-facebook2"></i></a></li>
-                        <li><a href="#"><i class="icon-twitter2"></i></a></li>
-                        <li><a href="#"><i class="icon-instagram"></i></a></li>
-                        <li><a href="#"><i class="icon-linkedin2"></i></a></li>
-                    </ul>
-                </div>
+
                 </div>
                 <div className="content col-lg-8">
                     <Route path="/" exact component={Header}/>

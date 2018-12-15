@@ -4,7 +4,7 @@ class About extends Component{
     render(){
         return(
             <div className="aboutme text-left">
-                <ReactCSSTransitionGroup transitionName="fade"
+                <ReactCSSTransitionGroup transitionName="slide"
                                          transitionAppear={true}
                                          transitionAppearTimeout={800}
                                          transitionEnterTimeout={800}
