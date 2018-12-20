@@ -1,7 +1,7 @@
 import React ,{Component} from 'react'
 import Video from './images/background.mp4'
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
-import Logo from './images/logo.png'
+
 import Cv from './images/cv.pdf'
 
 
@@ -32,17 +32,17 @@ class Header extends Component{
                         <div className="col-lg-4">
 
                             <p><a className="btn btn-info btn-learn" target="_blank" href={Cv}>Download CV <i
-                                className="icon-download4"></i></a></p>
+                                className="fa fa-download"></i></a></p>
                         </div>
                         <div className="col-lg-4">
 
-                            <p><a className="btn btn-success btn-learn" target="_blank" href="https:/www.linkedin.com/in/anjali-elizabeth-joseph">Check Out My LinkedIn <i
-                                className="icon-download4"></i></a></p>
+                            <p><a className="btn btn-success btn-learn" target="_blank" href="https:/www.linkedin.com/in/anjali-elizabeth-joseph">My LinkedIn <i
+                                className="fa fa-linkedin-square"></i></a></p>
                         </div>
                         <div className="col-lg-4">
 
-                            <p><a className="btn btn-primary btn-learn"  target="_blank" href="https://github.com/anjaligeril">Go Through My Git <i
-                                className="icon-download4"></i></a></p>
+                            <p><a className="btn btn-primary btn-learn"  target="_blank" href="https://github.com/anjaligeril"> My GitHub <i
+                                className="fa fa-github"></i></a></p>
                         </div>
                         </div>
                     </div>
